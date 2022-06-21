@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&display=swap');
+
+* {
+    cursor: none;
+    text-transform: capitalize;
+
+}
+
+body {
+    height: 400vh;
+    cursor: none;
+    background-color: rgb(56, 54, 58);
+    overflow-x: hidden;
+
+}
+
+a {
+    margin: 0px 20px;
+}
+
+button:hover {
+    background-color: red;
+}
+
+
+.scrollbtn {
+    position: fixed;
+    top: 90%;
+    left: 86vw;
+    /* z-index: 10000; */
+}
+
+.nav-link {
+    padding: 15px 60px;
+}
+
+.nav-link:hover {
+    background-color: rgb(199, 6, 6);
+    color: black;
+    border-radius: 20px;
+
+
+}
+
+.drops {
+    margin: 0;
+}
+
+.drops:hover {
+    background-color: rgb(202, 15, 15);
+    color: white;
+
+}
+
+.cursor {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background-color: rgb(202, 15, 15);
+    position: absolute;
+    border-radius: 50%;
+    transition-timing-function: ease-out;
+    pointer-events: none;
+    z-index: 10000;
+} 
+
+.cursor::after {
+    content: "";
+    animation: cursorAnim  5000ms infinite alternate;
+    position: absolute;
+    top: -22px;
+    left: -23px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 10px double rgba(255, 255, 255, 0.404);
+    box-shadow: 0px 0px 10px white;
+}
+
+@keyframes cursorAnim {
+    from {
+        transform: scale(0.3);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+
+
+@keyframes cursorAnim3 {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(3);
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+@keyframes cursorAnim2 {
+    to {
+        transform: scale(2);
+    }
+
+
+}
+
+.expand {
+    animation: cursorAnim3 forwards;
+    border: 1px solid rgb(180, 6, 6);
+}
+
+
+
+
+
+h1 {
+    font-size: 8vw;
+    font-family: 'Montserrat Alternates', sans-serif;
+
+}
+
+h2 {
+    font-size: 6vw;
+    font-family: 'Montserrat Alternates', sans-serif;
+
+}
+
+b {
+    font-size: 3vw;
+
+}
+
+/* .back-circle {
+    border: 30px solid rgb(202, 15, 15);
+    border-radius: 50%;
+    z-index: -1;
+    height: 12vw;
+} */
+
+.icon {
+    max-height: 60px;
+    max-width: auto;
+    transition-duration: 1s;
+    animation: iconBorder 1000ms alternate-reverse infinite ease;
+    outline-offset: 6px;
+    border-radius: 50%;
+
+}
+@keyframes iconBorder {
+    0% {
+        outline: 1px solid rgba(127, 3, 3, 0.895);
+        outline-offset: 1px;
+    }
+
+    100% {
+        outline: 5px solid rgba(127, 3, 3, 0.895);
+        outline-offset: 10px;
+    }
+}
+
+ 
+
+.icon:hover {
+    transform: scale(1.5);
+    box-shadow: 0px 0px 30px white;
+
+}
+
+
+.projects {
+    background-color: transparent;
+}
+
+.project-sub {
+    background-color: transparent;
+    color: white;
+    transition: 400ms;
+    text-align: center;
+    box-shadow: inset 1px 1px 20px rgb(172, 172, 172), 1px 1px 5px rgb(124, 123, 123);
+    padding: 20px;
+    border-radius: 30px;
+    border: none;
+
+}
+
+.project-sub:hover {
+    box-shadow: 1px 1px 20px white;
+
+}
+
+.headline {
+    background-color: rgb(202, 15, 15);
+    border-radius: 20px;
+
+}
+
+.ProLine {
+    background-color: rgb(30, 29, 29);
+    border-radius: 20px;
+    font-size: 4vw;
+
+
+}
+
+img {
+    transition: 1s;
+}
+
+img:hover {
+    transform: scale(1.2);
+
+}
+
+.self-img,
+.self-img:hover {
+    transition: none;
+    transform: none;
+
+}
+
+
+svg {
+    margin: 20px;
+    transition: 400ms;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 20%;
+    height: 50px;
+    width: 50px;
+
+}
+
+svg:hover {
+    transform: scale(1.5);
+    box-shadow: 1px 1px 30px white;
+}
+
+iframe {
+    border-radius: 10%;
+    margin-top: 20px;
+    transition: 400ms;
+
+}
+
+iframe:hover {
+    box-shadow: 1px 1px 20px white;
+
+
+}
+
+
+
