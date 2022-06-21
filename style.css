@@ -27,7 +27,7 @@ button:hover {
     position: fixed;
     top: 90%;
     left: 86vw;
-    /* z-index: 10000; */
+    z-index: 10000;
 }
 
 .nav-link {
@@ -138,12 +138,12 @@ b {
 
 }
 
-/* .back-circle {
+.back-circle {
     border: 30px solid rgb(202, 15, 15);
     border-radius: 50%;
     z-index: -1;
     height: 12vw;
-} */
+}
 
 .icon {
     max-height: 60px;
