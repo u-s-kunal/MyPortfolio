@@ -26,7 +26,6 @@ button:hover {
 .scrollbtn {
     position: fixed;
     top: 90%;
-    left: 86vw;
     z-index: 10000;
 }
 
