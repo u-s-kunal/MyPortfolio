@@ -26,6 +26,7 @@ button:hover {
 .scrollbtn {
     position: fixed;
     top: 90%;
+    /* left: 86vw; */
     z-index: 10000;
 }
 
@@ -137,12 +138,12 @@ b {
 
 }
 
-.back-circle {
+/* .back-circle {
     border: 30px solid rgb(202, 15, 15);
     border-radius: 50%;
     z-index: -1;
     height: 12vw;
-}
+} */
 
 .icon {
     max-height: 60px;
@@ -163,6 +164,10 @@ b {
         outline: 5px solid rgba(127, 3, 3, 0.895);
         outline-offset: 10px;
     }
+}
+
+.bi{
+    border-radius: 20%;
 }
 
  
